@@ -1,0 +1,7 @@
+package com.panchuang.manager.logic;
+
+import com.panchuang.manager.io.UserInput;
+
+public class Looper {
+	UserInput uit = new UserInput();
+}

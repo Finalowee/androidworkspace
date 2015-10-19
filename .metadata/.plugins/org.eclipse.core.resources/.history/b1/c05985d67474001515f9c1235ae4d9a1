@@ -1,0 +1,14 @@
+package com.panchuang.manager;
+
+import com.panchuang.manager.ui.UserAdminUI;
+
+public class Test {
+	public static void main(String[] args) {
+		private boolean  = true;
+		UserAdminUI ui1 = new UserAdminUI();
+		
+		while(flag){
+			
+		}
+	}
+}

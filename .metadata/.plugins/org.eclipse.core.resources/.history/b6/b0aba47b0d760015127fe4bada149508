@@ -1,0 +1,5 @@
+package com.panchuang.messagecopy.model;
+
+public class Message {
+
+}

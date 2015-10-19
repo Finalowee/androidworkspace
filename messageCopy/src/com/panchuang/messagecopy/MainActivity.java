@@ -1,0 +1,69 @@
+package com.panchuang.messagecopy;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.panchuang.messagecopy.model.Message;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+
+public class MainActivity extends Activity {
+
+	private List<Message> smsList;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		smsList = new ArrayList<Message>();
+		for(int i = 0; i < 10 ; i ++){
+			Message sms = new Message("À¼"+i,"2015.10.1"+i,"13"+i,"1");
+			smsList.add(sms);
+		}
+	}
+	
+	public void click(View v){
+		StringBuffer sb = new StringBuffer();
+		sb.append("<?xml version='1.0' encoding='utf-8'?>");
+		sb.append("<Message>");
+		for(Message sms : smsList){
+			sb.append("<sms>");
+			
+			sb.append("<body>");
+			sb.append(sms.getBody());
+			sb.append("</body>");
+			
+			sb.append("<date>");
+			sb.append(sms.getAddress());
+			sb.append("</date>");
+			
+			sb.append("<address>");
+			sb.append(sms.getAddress());
+			sb.append("</address>");
+			
+			sb.append("<type>");
+			sb.append(sms.getType());
+			sb.append("</type>");
+			
+			sb.append("</sms>");
+		}
+		sb.append("</Message>");
+		
+		File file = new File ("sdcard/sms.xml");
+		try {
+			FileOutputStream fos = new FileOutputStream(file);
+			fos.write(sb.toString().getBytes());
+			fos.close();			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
+}

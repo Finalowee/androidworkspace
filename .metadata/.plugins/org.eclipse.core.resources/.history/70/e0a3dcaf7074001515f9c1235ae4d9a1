@@ -1,0 +1,22 @@
+package com.panchuang.manager.ui;
+
+import java.util.Properties;
+
+import com.panchuang.manager.io.IOUtils;
+
+public class UserAdminUI {
+	private static Properties properties = null;
+	
+	static{
+		properties = IOUtils.loadProperties("help.properties", "res");
+	}
+	
+	public void getHelpInfo(String key){
+		System.out.println(properties.getProperty(key));
+	}
+	
+	public void systemStart(){
+		getHelpInfo("menu");
+	};
+		
+}

@@ -1,0 +1,9 @@
+package com.panchuang.manager.io;
+
+import java.io.RandomAccessFile;
+
+public class AcessWR {
+	try{
+		RandomAccessFile randomAccessFile = new RandomAccessFile("userInfo.dat", "rw");
+	}
+}

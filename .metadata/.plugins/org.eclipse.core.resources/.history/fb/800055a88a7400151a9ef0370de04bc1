@@ -1,0 +1,5 @@
+package com.panchuang.manager.model;
+
+public class User {
+
+}

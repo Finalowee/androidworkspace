@@ -1,0 +1,12 @@
+package com.panchuang.manager;
+
+import com.panchuang.manager.logic.MainLooper;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MainLooper mainLooper = new MainLooper();
+		mainLooper.loop();
+	}
+}

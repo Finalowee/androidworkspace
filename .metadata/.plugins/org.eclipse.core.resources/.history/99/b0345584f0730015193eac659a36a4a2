@@ -1,0 +1,11 @@
+package com.panchuang.manager;
+
+import java.util.Properties;
+
+import com.panchuang.manager.io.IOUtils;
+
+public class Test {
+	private static Properties properties = null;
+	
+		
+}

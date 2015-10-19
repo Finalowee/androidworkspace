@@ -1,0 +1,5 @@
+package com.panchuang.xml_serilalizer.model;
+
+public class Message {
+
+}

@@ -1,0 +1,94 @@
+package com.panchuang.manager.model;
+
+public class User {
+	public int id = 0;
+	private String name = null;
+	private int age = 0;
+	private String gender = null;
+	private float salary = 0f;
+	public User() {
+		super();
+		id++;
+	}
+	public User (int id){
+		super();
+		this.id = id;
+	}
+	public User(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	public User(int id, String name, int age) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
+	public User(int id, String name, int age, String gender) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+	}
+	public User(int id, String name, String male) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.gender = male;
+	}
+	public User(int id, String name, float salary) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+	public User(int id, String name, int age, float salary) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.salary = salary;
+	}
+	public User(int id, String name, String male, float salary) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.gender = male;
+		this.salary = salary;
+	}
+	public User(int id, String name, int age, String male, float salary) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.gender = male;
+		this.salary = salary;
+	}
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", age=" + age + ", male=" + gender + ", salary=" + salary + "]";
+	}
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + id;
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		User other = (User) obj;
+		if (id != other.id)
+			return false;
+		return true;
+	}
+	
+}

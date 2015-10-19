@@ -1,0 +1,21 @@
+package com.panchuang.messagecopy;
+
+import com.panchuang.messagecopy.model.Message;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		for(int i = 0; i < 10 ; i ++){
+			Message sms = new Message("À¼"+i,"2015.10.1"+i,i*i,"1");
+		}
+	}
+}

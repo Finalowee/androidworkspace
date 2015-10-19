@@ -1,0 +1,11 @@
+package com.panchuang.manager.model;
+
+public class User {
+	private String name = null;
+	private int id = 0;
+	private int age = 0;
+	private String male = null;
+	private float salary = 0f;
+	
+	
+}

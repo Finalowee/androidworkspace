@@ -1,0 +1,16 @@
+package com.panchuang.manager;
+
+import java.util.Properties;
+
+import com.panchuang.manager.io.IOUtils;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		IOUtils io = new IOUtils();
+		Properties properties = io.loadProperties("help.properties","res");
+		System.out.println(properties.get("menu"));
+	}
+
+}

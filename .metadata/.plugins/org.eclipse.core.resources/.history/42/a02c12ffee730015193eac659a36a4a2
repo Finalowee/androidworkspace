@@ -1,0 +1,13 @@
+package com.panchuang.manager;
+
+import com.panchuang.manager.io.IOUtils;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		IOUtils io = new IOUtils();
+		io.loadProperties("help.properties","res");
+	}
+
+}

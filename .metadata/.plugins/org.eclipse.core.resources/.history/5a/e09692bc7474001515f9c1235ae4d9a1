@@ -1,0 +1,5 @@
+package com.panchuang.manager.io;
+
+public class UserInput {
+
+}
